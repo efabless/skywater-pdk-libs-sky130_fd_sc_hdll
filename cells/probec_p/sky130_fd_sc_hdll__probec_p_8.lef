@@ -68,6 +68,18 @@ MACRO sky130_fd_sc_hdll__probec_p_8
         RECT 5.605000 -0.075000 5.755000 0.075000 ;
     END
   END VGND
+  PIN VNB
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+    END
+  END VNB
+  PIN VPB
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+    END
+  END VPB
   PIN VPWR
     DIRECTION INPUT ;
     USE POWER ;

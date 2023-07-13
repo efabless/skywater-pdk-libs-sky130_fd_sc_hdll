@@ -18,7 +18,7 @@
 .subckt sky130_fd_sc_hdll__probec_p_8 A VGND VNB VPB VPWR X
 X0 a_399_297# a_27_47# VPWR VPB sky130_fd_pr__pfet_01v8_hvt w=1e+06u l=180000u
 X1 VGND a_27_47# a_399_297# VNB sky130_fd_pr__nfet_01v8 w=650000u l=150000u
-X2 X a_399_297# VPB short w=1.6e+06u l=100000u
+R2 X a_399_297# sky130_fd_pr__res_generic_m5 w=1.6e+06u l=100000u
 X3 a_399_297# a_27_47# VPWR VPB sky130_fd_pr__pfet_01v8_hvt w=1e+06u l=180000u
 X4 a_27_47# A VGND VNB sky130_fd_pr__nfet_01v8 w=650000u l=150000u
 X5 a_27_47# A VPWR VPB sky130_fd_pr__pfet_01v8_hvt w=1e+06u l=180000u
@@ -34,8 +34,8 @@ X14 a_399_297# a_27_47# VGND VNB sky130_fd_pr__nfet_01v8 w=650000u l=150000u
 X15 a_399_297# a_27_47# VPWR VPB sky130_fd_pr__pfet_01v8_hvt w=1e+06u l=180000u
 X16 a_27_47# A VGND VNB sky130_fd_pr__nfet_01v8 w=650000u l=150000u
 X17 a_399_297# a_27_47# VGND VNB sky130_fd_pr__nfet_01v8 w=650000u l=150000u
-X18 VPWR m5_872_595# VNB short w=0u l=1.2e+06u
-X19 VGND m5_872_n71# VNB short w=0u l=1.2e+06u
+R18 VPWR m5_872_595# sky130_fd_pr__res_generic_m5 w=0u l=1.2e+06u
+R19 VGND m5_872_n71# sky130_fd_pr__res_generic_m5 w=0u l=1.2e+06u
 X20 VPWR A a_27_47# VPB sky130_fd_pr__pfet_01v8_hvt w=1e+06u l=180000u
 X21 VPWR a_27_47# a_399_297# VPB sky130_fd_pr__pfet_01v8_hvt w=1e+06u l=180000u
 X22 VGND a_27_47# a_399_297# VNB sky130_fd_pr__nfet_01v8 w=650000u l=150000u
