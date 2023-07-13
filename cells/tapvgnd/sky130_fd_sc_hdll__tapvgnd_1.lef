@@ -32,6 +32,18 @@ MACRO sky130_fd_sc_hdll__tapvgnd_1
     DIRECTION INOUT ;
     USE GROUND ;
   END VGND
+  PIN VNB
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+    END
+  END VNB
+  PIN VPB
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+    END
+  END VPB
   PIN VPWR
     DIRECTION INOUT ;
     USE POWER ;
