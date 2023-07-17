@@ -37,7 +37,7 @@
 `ifdef FUNCTIONAL
 `include "sky130_fd_sc_hdll__isobufsrc.functional.pp.v"
 `else  // FUNCTIONAL
-`include "sky130_fd_sc_hdll__isobufsrc.behavioral.pp.v"
+`include "sky130_fd_sc_hdll__isobufsrc.timing.pp.v"
 `endif // FUNCTIONAL
 
 `else  // USE_POWER_PINS
@@ -45,7 +45,7 @@
 `ifdef FUNCTIONAL
 `include "sky130_fd_sc_hdll__isobufsrc.functional.v"
 `else  // FUNCTIONAL
-`include "sky130_fd_sc_hdll__isobufsrc.behavioral.v"
+`include "sky130_fd_sc_hdll__isobufsrc.timing.v"
 `endif // FUNCTIONAL
 
 `endif // USE_POWER_PINS
