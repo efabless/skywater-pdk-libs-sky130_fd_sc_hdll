@@ -37,7 +37,7 @@
 `ifdef FUNCTIONAL
 `include "sky130_fd_sc_hdll__inputiso1p.functional.pp.v"
 `else  // FUNCTIONAL
-`include "sky130_fd_sc_hdll__inputiso1p.behavioral.pp.v"
+`include "sky130_fd_sc_hdll__inputiso1p.timing.pp.v"
 `endif // FUNCTIONAL
 
 `else  // USE_POWER_PINS
@@ -45,7 +45,7 @@
 `ifdef FUNCTIONAL
 `include "sky130_fd_sc_hdll__inputiso1p.functional.v"
 `else  // FUNCTIONAL
-`include "sky130_fd_sc_hdll__inputiso1p.behavioral.v"
+`include "sky130_fd_sc_hdll__inputiso1p.timing.v"
 `endif // FUNCTIONAL
 
 `endif // USE_POWER_PINS

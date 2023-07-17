@@ -35,7 +35,7 @@
 `ifdef FUNCTIONAL
 `include "sky130_fd_sc_hdll__diode.functional.pp.v"
 `else  // FUNCTIONAL
-`include "sky130_fd_sc_hdll__diode.behavioral.pp.v"
+`include "sky130_fd_sc_hdll__diode.timing.pp.v"
 `endif // FUNCTIONAL
 
 `else  // USE_POWER_PINS
@@ -43,7 +43,7 @@
 `ifdef FUNCTIONAL
 `include "sky130_fd_sc_hdll__diode.functional.v"
 `else  // FUNCTIONAL
-`include "sky130_fd_sc_hdll__diode.behavioral.v"
+`include "sky130_fd_sc_hdll__diode.timing.v"
 `endif // FUNCTIONAL
 
 `endif // USE_POWER_PINS

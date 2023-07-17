@@ -21,9 +21,9 @@ if (GATE==1'b0&&SCE==1'b1) (CLK +=> GCLK)=(0:0:0, 0:0:0);
 if (GATE==1'b1&&SCE==1'b0) (CLK +=> GCLK)=(0:0:0, 0:0:0);
 if (GATE==1'b1&&SCE==1'b1) (CLK +=> GCLK)=(0:0:0, 0:0:0);
 if (GATE==1'b0&&SCE==1'b0) (CLK +=> GCLK)=(0:0:0, 0:0:0);
-$setuphold ( posedge CLK , posedge SCE , 0:0:0 , 0:0:0 , notifier , SCE_AWAKE , SCE_AWAKE , CLK_delayed , SCE_delayed ) ;
-$setuphold ( posedge CLK , negedge SCE , 0:0:0 , 0:0:0 , notifier , SCE_AWAKE , SCE_AWAKE , CLK_delayed , SCE_delayed ) ;
-$setuphold ( posedge CLK , posedge GATE , 0:0:0 , 0:0:0 , notifier , GATE_AWAKE , GATE_AWAKE , CLK_delayed , GATE_delayed ) ;
-$setuphold ( posedge CLK , negedge GATE , 0:0:0 , 0:0:0 , notifier , GATE_AWAKE , GATE_AWAKE , CLK_delayed , GATE_delayed ) ;
-$width ( negedge CLK &&& AWAKE , 1.0:1.0:1.0 , 0 , notifier ) ;
+$setuphold ( posedge CLK , posedge SCE , 0:0:0 , 0:0:0 , notifier , SCE_awake , SCE_awake , CLK_delayed , SCE_delayed ) ;
+$setuphold ( posedge CLK , negedge SCE , 0:0:0 , 0:0:0 , notifier , SCE_awake , SCE_awake , CLK_delayed , SCE_delayed ) ;
+$setuphold ( posedge CLK , posedge GATE , 0:0:0 , 0:0:0 , notifier , GATE_awake , GATE_awake , CLK_delayed , GATE_delayed ) ;
+$setuphold ( posedge CLK , negedge GATE , 0:0:0 , 0:0:0 , notifier , GATE_awake , GATE_awake , CLK_delayed , GATE_delayed ) ;
+$width ( negedge CLK &&& awake , 1.0:1.0:1.0 , 0 , notifier ) ;
 endspecify

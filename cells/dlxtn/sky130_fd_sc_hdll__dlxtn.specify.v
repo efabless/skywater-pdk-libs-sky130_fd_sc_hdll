@@ -20,7 +20,7 @@ specify
 if (GATE_N==1'b0) (D +=> Q)=(0:0:0, 0:0:0);
 if (D==1'b1) (negedge GATE_N => (Q -: 1'b1))=(0:0:0, 0:0:0);
 if (D==1'b0) (negedge GATE_N => (Q +: 1'b1))=(0:0:0, 0:0:0);
-$width ( negedge GATE_N &&& AWAKE , 1.0:1.0:1.0 , 0 , notifier ) ;
-$setuphold ( posedge GATE_N , posedge D , 0:0:0 , 0:0:0 , notifier , AWAKE , AWAKE , GATEN_delayed , D_delayed ) ;
-$setuphold ( posedge GATE_N , negedge D , 0:0:0 , 0:0:0 , notifier , AWAKE , AWAKE , GATEN_delayed , D_delayed ) ;
+$width ( negedge GATE_N &&& awake , 1.0:1.0:1.0 , 0 , notifier ) ;
+$setuphold ( posedge GATE_N , posedge D , 0:0:0 , 0:0:0 , notifier , awake , awake , GATE_N_delayed , D_delayed ) ;
+$setuphold ( posedge GATE_N , negedge D , 0:0:0 , 0:0:0 , notifier , awake , awake , GATE_N_delayed , D_delayed ) ;
 endspecify
